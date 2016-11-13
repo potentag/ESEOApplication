@@ -1,3 +1,38 @@
 <resources>
-    <string name="app_name">ESEO Application</string>
+    <string name="connexion">Connexion</string>
+    <string name="stageEmploi">Stage/Emploi</string>
+    <string name="CVTheque">CV Theque</string>
+    <string name="informationESEO">Information ESEO</string>
+    <string name="coursOptions">Cours et options</string>
+    <string name="title_activity_displayinformation_eseo">Information ESEO</string>
+    <string name="title_activity_display_connexion">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_display_stage_emploi">Stage/Emploi</string>
+    <string name="title_activity_display_cvtheque">CV Theque</string>
+    <string name="title_activity_displaycours_options">Cours/Options</string>
+    <string name="title_activity_display_stage_emploi_map">Map</string>
+
+
+    <string name="app_name">Basic Jsoup Tutorial</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Title">Website Title</string>
+    <string name="Description">Website Description</string>
+    <string name="Logo">Website Logo</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

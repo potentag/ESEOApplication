@@ -1,17 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.agath.eseoapplication.MainActivity">
 
-    <TextView
+    <!--
+    <EditText android:id="@+id/edit_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:hint="@string/edit_message"
+        android:layout_marginStart="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="78dp" />
+        -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connexion"
+        android:textSize="15sp"
+        android:onClick="connexion"
+        android:id="@+id/buttonConnexion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informationESEO"
+        android:textSize="15sp"
+        android:onClick="informationESEO"
+        android:id="@+id/InformationESEO"
+        android:layout_below="@+id/StageEmploi"
+        android:layout_toStartOf="@+id/CoursOptions"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coursOptions"
+        android:textSize="15sp"
+        android:onClick="coursOptions"
+        android:id="@+id/CoursOptions"
+        android:layout_marginEnd="19dp"
+        android:layout_alignBaseline="@+id/InformationESEO"
+        android:layout_alignBottom="@+id/InformationESEO"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CVTheque"
+        android:textSize="15sp"
+        android:onClick="CVTheque"
+        android:id="@+id/CVTheque"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="134dp"
+        android:layout_below="@+id/buttonConnexion"
+        android:layout_alignEnd="@+id/CoursOptions" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stageEmploi"
+        android:textSize="15sp"
+        android:onClick="stageEmploi"
+        android:id="@+id/StageEmploi"
+        android:layout_alignBaseline="@+id/CVTheque"
+        android:layout_alignBottom="@+id/CVTheque"
+        android:layout_alignStart="@+id/InformationESEO" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logo_eseo"
+        android:id="@+id/imageView"/>
+
+    <Button
+        android:text="Jeux de dés"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="des"
+        android:id="@+id/des"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

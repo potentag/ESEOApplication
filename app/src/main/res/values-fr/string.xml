@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Application ESEO</string>
+    <string name="edit_message">Entrer un message</string>
+    <string name="button_send">Envoyer</string>
+</resources>

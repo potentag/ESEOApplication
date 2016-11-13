@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_stage_emploi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.agath.eseoapplication.DisplayStageEmploiActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/rechercherStageEmploi"
+        android:text="Rechercher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Critères"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/critere"
+        android:textSize="35dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stage"
+        android:text="Stage : "
+        android:textSize="25dp"
+        android:layout_alignStart="@+id/checkBoxEmploi"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/critere"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorBlack"
+    />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxI1"
+        android:text="I1"
+        android:layout_toEndOf="@+id/stage"
+        android:layout_alignBaseline="@+id/stage"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxI2"
+        android:text="I2"
+        android:layout_below="@+id/checkBoxI1"
+        android:layout_alignStart="@+id/checkBoxI1"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxI3"
+        android:text="I3"
+        android:layout_below="@+id/checkBoxI2"
+        android:layout_alignStart="@+id/checkBoxI2"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxEmploi"
+        android:text="Emploi"
+        android:textSize="25dp"
+        android:layout_below="@+id/checkBoxI3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorBlack" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/domaine"
+        android:text="Domaine : "
+        android:textSize="25dp"
+        android:layout_below="@+id/checkBoxEmploi"
+        android:layout_alignStart="@+id/stage"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorBlack"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/domaineListe"
+        android:layout_alignBaseline="@+id/domaine"
+        android:layout_toEndOf="@+id/domaine"
+        android:layout_marginTop="40dp"
+        />
+
+</RelativeLayout>
